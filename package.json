@@ -1,0 +1,24 @@
+{
+  "name": "mermaid-to-png-converter",
+  "version": "1.0.0",
+  "description": "A tool to convert Mermaid diagrams to PNG images",
+  "main": "mermaid_to_png.py",
+  "scripts": {
+    "install-mermaid": "npm install @mermaid-js/mermaid-cli",
+    "convert": "python mermaid_to_png.py",
+    "test": "python mermaid_to_png.py --sample && python mermaid_to_png.py -f sample.mmd"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^10.9.1",
+    "mermaid": "^11.8.1"
+  },
+  "keywords": [
+    "mermaid",
+    "diagram",
+    "png",
+    "converter",
+    "visualization"
+  ],
+  "author": "GitHub Copilot Assistant",
+  "license": "MIT"
+}
