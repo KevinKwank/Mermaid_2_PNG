@@ -178,7 +178,6 @@ Code2Graph/
 ├── requirements.txt       # Python依赖配置
 ├── install.ps1           # 安装脚本
 ├── start_web.bat         # Web应用启动脚本
-├── convert.bat           # 命令行快捷脚本
 └── README.md             # 说明文档
 ```
 
