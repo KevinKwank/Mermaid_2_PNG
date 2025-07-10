@@ -131,12 +131,16 @@ sequenceDiagram
 **甘特图**：
 ```mermaid
 gantt
-    title 项目计划
+    title Task Scheduling Gantt Chart
     dateFormat YYYY-MM-DD
-    section 阶段1
-    任务1: 2024-01-01, 30d
-    任务2: after 任务1, 20d
+    section Planning
+    Define requirements: reqs, 2024-07-01, 5d
+    section Development
+    Development work: dev, after reqs, 10d
+    section Testing
+    Testing phase: test, after dev, 5d
 ```
+
 
 ## 🛠️ 命令行选项
 
