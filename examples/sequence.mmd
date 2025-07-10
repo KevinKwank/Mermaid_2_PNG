@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant 用户
+    participant 脚本
+    participant MermaidCLI
+    participant 文件系统
+    
+    用户->>脚本: 运行转换命令
+    脚本->>脚本: 检查依赖
+    
+    alt 依赖检查通过
+        脚本->>文件系统: 读取Mermaid文件
+        文件系统-->>脚本: 返回文件内容
+        脚本->>MermaidCLI: 调用转换命令
+        MermaidCLI->>MermaidCLI: 解析Mermaid语法
+        MermaidCLI->>MermaidCLI: 渲染图表
+        MermaidCLI->>文件系统: 保存PNG文件
+        MermaidCLI-->>脚本: 转换完成
+        脚本-->>用户: 显示成功消息
+    else 依赖检查失败
+        脚本-->>用户: 显示错误信息
+    end

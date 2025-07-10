@@ -1,0 +1,21 @@
+{
+  "theme": "default",
+  "width": 1200,
+  "height": 800,
+  "backgroundColor": "white",
+  "scale": 1.0,
+  "mermaid": {
+    "theme": "default",
+    "themeVariables": {
+      "primaryColor": "#ff6b6b",
+      "primaryTextColor": "#ffffff",
+      "primaryBorderColor": "#ff4757",
+      "lineColor": "#3742fa",
+      "sectionBkgColor": "#70a1ff",
+      "altSectionBkgColor": "#7bed9f",
+      "gridColor": "#dfe4ea",
+      "secondaryColor": "#5352ed",
+      "tertiaryColor": "#ffffff"
+    }
+  }
+}

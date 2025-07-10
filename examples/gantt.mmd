@@ -1,0 +1,22 @@
+gantt
+    title Mermaid转PNG项目开发计划
+    dateFormat YYYY-MM-DD
+    axisFormat %m-%d
+    
+    section 需求分析
+    需求调研           :done, req1, 2024-01-01, 2024-01-03
+    技术选型           :done, req2, after req1, 2d
+    
+    section 开发阶段
+    核心功能开发        :active, dev1, 2024-01-06, 5d
+    CLI界面开发        :dev2, after dev1, 3d
+    批量处理功能        :dev3, after dev2, 2d
+    
+    section 测试阶段
+    单元测试           :test1, after dev3, 2d
+    集成测试           :test2, after test1, 2d
+    用户测试           :test3, after test2, 1d
+    
+    section 发布
+    文档编写           :doc1, after dev1, 4d
+    打包发布           :release, after test3, 1d

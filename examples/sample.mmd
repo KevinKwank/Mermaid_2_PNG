@@ -1,0 +1,24 @@
+graph TD
+    A[用户需求] --> B{分析需求}
+    B -->|简单图表| C[直接转换]
+    B -->|复杂图表| D[优化设计]
+    
+    C --> E[生成PNG]
+    D --> F[调整样式]
+    F --> E
+    
+    E --> G{检查质量}
+    G -->|满意| H[保存文件]
+    G -->|不满意| I[调整参数]
+    I --> E
+    
+    H --> J[完成]
+    
+    %% 样式定义
+    classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef process fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef decision fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    
+    class A,J startEnd
+    class C,D,E,F,H,I process
+    class B,G decision

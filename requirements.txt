@@ -1,0 +1,7 @@
+# Python requirements for Mermaid to PNG converter
+# Install with: pip install -r requirements.txt
+# Web API dependencies
+Flask>=2.0.0
+Flask-CORS>=3.0.0
+Pillow>=8.0.0
+click>=8.0.0
